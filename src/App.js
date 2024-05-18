@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import "./App.css";
+import About from "./components/About";
 import Navbar from "./components/Navbar";
-import TextForm from "./components/TextForm";
-import TextForm2 from "./components/TextForm2";
+// import TextForm from "./components/TextForm";
 function App() {
   return (
     <>
@@ -10,7 +10,8 @@ function App() {
       {/* <Navbar title={3} about="about Text" /> */}
       {/* <Navbar /> */}
       <div className="container my-3">
-        <TextForm heading='Enter the text to analyze blow'/>
+        {/* <TextForm heading='Enter the text to analyze blow'/> */}
+<About/>
       </div>
     
         
