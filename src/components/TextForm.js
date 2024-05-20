@@ -21,10 +21,10 @@ export default function TextForm(props) {
 
   };
   const HandleCopy = () => {
-    let newText = document.getElementById("mybox");
-    newText.select();
-    navigator.clipboard.writeText(newText.value);
-    document.getSelection().removeAllRanges();
+    // let text = document.getElementById("mybox");
+    // text.select();
+    navigator.clipboard.writeText(text);
+    // document.getSelection().removeAllRanges();
     props.showAlert("Copied to Clipboard", "success");
 
   };
@@ -57,7 +57,7 @@ export default function TextForm(props) {
             id="mybox"
             rows="8"
             style={{
-              backgroundColor: props.mode === "dark" ? "grey" : "white",
+              backgroundColor: props.mode === "dark" ? "#13466e" : "white",
               color: props.mode === "dark" ? "white" : "#042743",
             }}
           ></textarea>

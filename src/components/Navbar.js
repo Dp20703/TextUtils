@@ -28,29 +28,20 @@ export default function Navbar(props) {
               {/* <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a> */}
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className="nav-link  " aria-current="page"   to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link " to="/about">
+              <Link className="nav-link" to="/about">
                 About
               </Link>
             </li>
           </ul>
 
-          {/* <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-primary" type="submit">
-              Search
-            </button>
-          </form> */}
-          <div className="d-flex">
+
+          {/* //Different Types Of Toggle Buttons..... */}
+          {/* <div className="d-flex">
             <div className="bg-primary rounded mx-2 border border-light" onClick={() => { props.toggleStyle('primary') }} style={{ height: '30px', width: '30px', cursor: 'pointer' }}></div>
             <div className="bg-danger rounded mx-2 border border-light" onClick={() => { props.toggleStyle('danger') }} style={{ height: '30px', width: '30px', cursor: 'pointer' }}></div>
             <div className="bg-success rounded mx-2 border border-light" onClick={() => { props.toggleStyle('success') }} style={{ height: '30px', width: '30px', cursor: 'pointer' }}></div>
@@ -58,9 +49,9 @@ export default function Navbar(props) {
             <div className="bg-light rounded mx-2 border border-light" onClick={() => { props.toggleStyle('light') }} style={{ height: '30px', width: '30px', cursor: 'pointer' }}></div>
             <div className="bg-dark rounded mx-2 border border-light" onClick={() => { props.toggleStyle('dark') }} style={{ height: '30px', width: '30px', cursor: 'pointer' }}></div>
             
-          </div>
+          </div> */}
 
-          {/* <div
+          <div
             className={`form-check form-switch text-${props.mode === "light" ? "dark" : "light"}`}>
             <input onClick={props.toggleStyle}
               className="form-check-input"
@@ -74,7 +65,7 @@ export default function Navbar(props) {
               Enable Dark Mode
             </label>
 
-          </div> */}
+          </div>
 
 
         </div>
