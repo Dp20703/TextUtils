@@ -6,7 +6,7 @@ export default function Navbar(props) {
   let location = useLocation();
   return (
     <nav
-      className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+      className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
@@ -29,9 +29,7 @@ export default function Navbar(props) {
               {/* <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a> */}
-              <Link className={`nav-link ${location.pathname === "/" ? 'active' : ""}`} aria-current="page" to="/">
-                Home
-              </Link>
+              <Link className={`nav-link ${location.pathname === "/" ? 'active' : ""}`} aria-current="page" to="/">Home</Link>
             </li>
             <li className="nav-item">
               <Link className={`nav-link ${location.pathname === "/about" ? 'active' : ""}`} to="/about">
