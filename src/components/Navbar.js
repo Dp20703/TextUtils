@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar(props) {
+  let location = useLocation();
   return (
     <nav
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
@@ -28,12 +29,12 @@ export default function Navbar(props) {
               {/* <a className="nav-link active" aria-current="page" href="#">
                 Home
               </a> */}
-              <Link className="nav-link  " aria-current="page"   to="/">
+              <Link className={`nav-link ${location.pathname === "/" ? 'active' : ""}`} aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className={`nav-link ${location.pathname === "/about" ? 'active' : ""}`} to="/about">
                 About
               </Link>
             </li>
